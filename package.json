@@ -1,0 +1,31 @@
+{
+  "private": true,
+  "name": "example-config",
+  "version": "1.0.0",
+  "description": "Example configuration for Indiekit",
+  "main": "index.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/getindiekit/example-config.git"
+  },
+  "keywords": [
+    "indiekit",
+    "indieweb"
+  ],
+  "author": {
+    "name": "Paul Robert Lloyd",
+    "url": "https://paulrobertlloyd.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/getindiekit/example-config/issues"
+  },
+  "homepage": "https://github.com/getindiekit/example-config#readme",
+  "dependencies": {
+    "@indiekit/indiekit": "^0.1.0",
+    "@indiekit/preset-jekyll": "^0.1.0",
+    "@indiekit/store-github": "^0.1.0",
+    "@indiekit/syndicator-twitter": "^0.1.0"
+  }
+}
