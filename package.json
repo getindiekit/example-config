@@ -25,7 +25,12 @@
   "dependencies": {
     "@indiekit/indiekit": "^0.1.0",
     "@indiekit/preset-jekyll": "^0.1.0",
+    "@indiekit/preset-hugo": "^0.1.0",
     "@indiekit/store-github": "^0.1.0",
-    "@indiekit/syndicator-twitter": "^0.1.0"
+    "@indiekit/syndicator-internet-archive": "^0.1.0",
+    "@indiekit/syndicator-twitter": "^0.1.0",
+    "@indiekit/store-bitbucket": "^0.1.0",
+    "@indiekit/store-gitea": "^0.1.0",
+    "@indiekit/store-gitlab": "^0.1.0"
   }
 }
