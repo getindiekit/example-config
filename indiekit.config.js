@@ -49,7 +49,7 @@ module.exports = {
    * See: https://getindiekit.com/configuration/#publication
    */ 
   publication: {
-    me: "WEBSITE_URL",
+    me: "PUBLICATION_URL",
     postTypes: postTypes,
   },
   /**

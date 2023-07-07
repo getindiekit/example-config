@@ -12,7 +12,7 @@ This example assumes that want to:
 
 Replace the following strings in the [configuration file](indiekit.config.js) with your own values:
 
-* `WEBSITE_URL`
+* `PUBLICATION_URL`
 * `GITHUB_USERNAME`
 * `GITHUB_REPOSITORY`
 * `GITHUB_BRANCH`
