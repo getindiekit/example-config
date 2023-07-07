@@ -24,10 +24,10 @@
     "start": "indiekit serve"
   },
   "dependencies": {
-    "@indiekit/indiekit": "^1.0.0-alpha",
-    "@indiekit/preset-jekyll": "^1.0.0-alpha",
-    "@indiekit/store-github": "^1.0.0-alpha",
-    "@indiekit/syndicator-mastodon": "^1.0.0-alpha"
+    "@indiekit/indiekit": "^1.0.0-beta",
+    "@indiekit/preset-jekyll": "^1.0.0-beta",
+    "@indiekit/store-github": "^1.0.0-beta",
+    "@indiekit/syndicator-mastodon": "^1.0.0-beta"
   },
   "engines": {
     "node": ">=18"
