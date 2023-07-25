@@ -1,7 +1,9 @@
-const process = require("node:process");
-require("dotenv").config();
+import process from "node:process";
+import * as dotenv from "dotenv";
 
-module.exports = {
+dotenv.config();
+
+const config = {
   /**
    * Application options
    *
@@ -67,3 +69,5 @@ module.exports = {
     accessToken: process.env.MASTODON_ACCESS_TOKEN,
   }
 };
+
+export default config;
