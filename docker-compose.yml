@@ -8,6 +8,8 @@ services:
     ports:
       - "${HTTP_PORT:-3000}:3000"
     environment:
+      - GITHUB_TOKEN
+      - MASTODON_ACCESS_TOKEN
       - MONGO_URL=mongodb://$MONGO_INITDB_ROOT_USERNAME:$MONGO_INITDB_ROOT_PASSWORD@mongo
       - PASSWORD_SECRET
       - SECRET

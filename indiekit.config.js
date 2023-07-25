@@ -5,18 +5,6 @@ dotenv.config();
 
 const config = {
   /**
-   * Application options
-   *
-   * These values are used to configure application behaviour.
-   *
-   * See: https://getindiekit.com/configuration/#application
-   */
-  application: {
-    mongodbUrl: process.env.MONGO_URL,
-    timeZone: process.env.TZ,
-  },
-
-  /**
    * Plug-ins
    *
    * In this example we have chosen to use a publication preset for Jekyll,
@@ -66,7 +54,6 @@ const config = {
     checked: true,
     url: process.env.MASTODON_URL,
     user: process.env.MASTODON_USER,
-    accessToken: process.env.MASTODON_ACCESS_TOKEN,
   }
 };
 

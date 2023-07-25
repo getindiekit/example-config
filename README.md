@@ -10,20 +10,22 @@ This example assumes that want to:
 
 ## Configuration variables
 
-Replace the following strings in the [configuration file](indiekit.config.js) with your own values:
+The following strings in the [configuration file](indiekit.config.js) should be replaced with your own values (or saved as environment variables):
 
-* `PUBLICATION_URL`
-* `GITHUB_USERNAME`
-* `GITHUB_REPOSITORY`
-* `GITHUB_BRANCH`
-* `MASTODON_SERVER`
-* `MASTODON_USERNAME`
+* `process.env.PUBLICATION_URL`
+* `process.env.GITHUB_USERNAME`
+* `process.env.GITHUB_REPOSITORY`
+* `process.env.GITHUB_BRANCH`
+* `process.env.MASTODON_SERVER`
+* `process.env.MASTODON_USERNAME`
 
-Some values shouldn’t be made public. Instead, they should be saved as environment variables that can only be seen by your server:
+Some values shouldn’t be made public, or included in your configuration file. Instead, they should be saved as environment variables that can only be seen by you and your server:
 
 * `GITHUB_TOKEN`
 * `MASTODON_ACCESS_TOKEN`
-* `MONGODB_URL`
+* `MONGO_URL`
+* `PASSWORD_SECRET`
+* `SECRET`
 
 ## Starting your server
 
@@ -38,3 +40,8 @@ If you want to deploy your server using [Docker](https://www.docker.com), the fo
 * `.dockerignore`
 * `docker-compose.yml`
 * `Dockerfile`
+
+If you are using Docker Compose, the `MONGO_URL` environment variable does not need to be set. The following environment variables should be provided instead:
+
+* `MONGO_INITDB_ROOT_USERNAME`
+* `MONGO_INITDB_ROOT_PASSWORD`
