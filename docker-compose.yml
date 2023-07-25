@@ -1,0 +1,26 @@
+version: "3.9"
+services:
+  indiekit:
+    container_name: indiekit
+    image: getindiekit/indiekit
+    restart: always
+    build: .
+    ports:
+      - "${HTTP_PORT:-3000}:3000"
+    environment:
+      - MONGO_URL=mongodb://$MONGO_INITDB_ROOT_USERNAME:$MONGO_INITDB_ROOT_PASSWORD@mongo
+      - PASSWORD_SECRET
+      - SECRET
+  mongo:
+    container_name: mongo
+    image: mongo:4
+    restart: always
+    volumes:
+      - mongo:/data/db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME
+      - MONGO_INITDB_ROOT_PASSWORD
+
+volumes:
+  mongo:
+    external: true

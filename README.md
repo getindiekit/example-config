@@ -30,3 +30,11 @@ Some values shouldn’t be made public. Instead, they should be saved as environ
 Once you have updated the configuration file with your own values, and ensured environment variables are present, you can start the server using the following command:
 
 `npm start`
+
+## Server deployment using Docker
+
+If you want to deploy your server using [Docker](https://www.docker.com), the following files are provided as a starting point:
+
+* `.dockerignore`
+* `docker-compose.yml`
+* `Dockerfile`
