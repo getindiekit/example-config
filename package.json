@@ -30,7 +30,7 @@
     "@indiekit/syndicator-mastodon": "^1.0.0-beta"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "private": true
 }
