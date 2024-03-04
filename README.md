@@ -45,3 +45,9 @@ If you are using Docker Compose, the `MONGO_URL` environment variable does not n
 
 * `MONGO_INITDB_ROOT_USERNAME`
 * `MONGO_INITDB_ROOT_PASSWORD`
+
+## Server deployment using Railway
+
+Click the button to use this configuration as the basis of a new service deployed with Railway:
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/gEboK6?referralCode=bCd1gL)
